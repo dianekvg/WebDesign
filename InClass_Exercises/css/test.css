@@ -1,0 +1,22 @@
+
+  .myblue {
+    color: blue;
+  }
+  
+  .myred {
+    color: #ff0000;
+  }
+
+  #mypurple {
+    color: purple;
+  }
+
+  footer {
+    padding: 10px;
+    color: #ff0000;
+    border-radius: 3px;
+    border: solid 1px #ccc;
+    /* goes clockwise around top right bottom left */
+    margin: 5px 10px 5px 0px;
+    background-color: blanchedalmond;
+  }
