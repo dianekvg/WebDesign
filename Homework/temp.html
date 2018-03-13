@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'/>
-  <link rel="stylesheet" href="./css/box_model.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/minty/bootstrap.min.css">
+  <link rel="stylesheet" type='text/css' href="css/latitudeadjustment.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <title>Latitude Adjustment</title>
 </head>
 
 <body>
-  <h1>Your Name</h1>
-  <section class="my_image">
-    <img src="https://placehold.it/200x200" alt="Your Name">
-  </section>
+  <header class="navbar navbar-dark navbar-expand-md">
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+      <div class="container"><a href="../" class="navbar-brand">Need a Latitude Adjustment?</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> <!--CLOSES <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>-->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Plots <span class="caret"></span></a>
+          <div class="dropdown-menu" aria-labelledby="themes">         
+          <a class="dropdown-item" href="temp.html">Latitude vs. Max Temperature</a>
+          <a class="dropdown-item" href="humidity.html">Latitude vs. Humidity</a>
+          <a class="dropdown-item" href="cloudiness.html">Latitude vs. Cloudiness</a>
+          <a class="dropdown-item" href="wind.html">Latitude vs. Wind Speed</a>            
+        </div> <!--CLOSES <div class="collapse navbar-collapse" id="navbarResponsive"></div>-->      
+        <div> <!--OPENS LIST-->
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparisons</a>
+          </li> <!--CLOSES <li class="nav-item"></li>-->
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li> <!--CLOSES <li class="nav-item"></li>-->
+        </div> <!--CLOSES LIST--> 
+      </div> <!--CLOSES <div class="container"><a href="../" class="navbar-brand">Need a Latitude Adjustment?</a></div>-->
+    </div> <!--CLOSES <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary"></div>-->
+  </header>
 
-  <p id="story">Write a short paragraph about yourself or some placeholder text.</p>
-  <p>A second short paragraph about yourself or some placeholder text.</p>
+  <div class="container"><br><br><br>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card border-success mb-3">
+          <div class="card-body">
+            <h4 class="card-title">Latitude vs. Temperature</h4>
+            <p class="card-text">
+              &nbsp&nbsp&nbsp&nbspThis analysis revealed that proximity to the equator is a good indicator that the city
+              will have a somewhat elevated temperature.  Temperatures decline as you move farther from the equator, with the 
+              decline occuring faster as you move North; the decline in temperatures as you move South are not as dramatic.   
+            </p> <!--CLOSES <p class="card-text">-->
+          </div> <!--CLOSES <div class="card-body">-->
+        </div> <!--CLOSES <div class="card border-success mb-3">-->
+      </div> <!--CLOSES <div class="col-md-12">-->
+      <div class="col-lg-9">
+        <img src="visualizations/temp_full.png" alt='temperature' height="450" width="775"/>  
+      </div> <!--CLOSES <div class="col-lg-6">-->
+    </div> <!--CLOSES <div class="row">-->    
+  </div> <!--CLOSES <div class="container"><br><br><br>-->
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <ul>
-    <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
-    <li><strong>Github:</strong> <a href="#">sampleName</a></li>
-    <li><strong>Twitter:</strong> <a href="#">coming soon</a></li>
-  </ul>
-
-  <table>
-    <tr>
-      <th>Books</th>
-      <th>Movies</th>
-      <th>Games</th>
-    </tr>
-    <tr>
-      <td>The Hobbit</td>
-      <td>Hot Fuzz</td>
-      <td>Dark Souls</td>
-    </tr>
-    <tr>
-      <td>The Name of the Wind</td>
-      <td>The Avengers</td>
-      <td>The Last of Us</td>
-    </tr>
-    <tr>
-      <td>The Girl With All the Gifts</td>
-      <td>The Matrix</td>
-      <td>Dragon Age: Origins</td>
-    </tr>
-  </table>
-<footer>
-  &copy; 2018 Us LLC
-</footer>
 </body>
-
 </html>

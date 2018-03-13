@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return send_from_directory('', 'homepage.html')
+    return send_from_directory('', 'home.html')
 
 @app.route('/<path:path>')
 def send_static_file(path):
